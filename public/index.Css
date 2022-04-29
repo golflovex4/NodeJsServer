@@ -110,14 +110,18 @@ nav
     color: rgb(255, 255, 255);
     font-size: 1cm;
 }
-.icons
+.flex2
 {
-    margin-top: 10%;
-    background-color: #ffffff9c;
+    display: inline-flex;
 }
 .flex
 {
     display: inline-flex;
+}
+.icons
+{
+    margin-top: 10%;
+    background-color: #ffffff9c;
 }
 .icon_info
 {
@@ -125,6 +129,7 @@ nav
     color: rgb(0, 0, 0);
     font-size: 20px;
     text-align: center;
+    padding: 15px;
 }
 .icons img
 {

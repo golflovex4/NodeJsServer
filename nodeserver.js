@@ -23,10 +23,29 @@ var feature = [
         bottom : "about AIoT & Robotic"
     }
 ];
+var icon = [
+    {
+        icons : "img/Logo/email.svg",
+        under : "chaiwat.fakj@bu.ac.th ( ͡°👅 ͡°)"
+    },
+    {
+        icons : "img/Logo/twitter.svg",
+        under : "GoRuFu ︻╦╤─"
+    },
+    {
+        icons : "img/Logo/youtube.svg",
+        under : "GoRuFu ︻╦╤─"
+    },
+    {
+        icons : "img/Logo/facebook.svg",
+        under : "Chaiwat Fakjeen (◑‿◐) "
+    }
 
+];
 //var content
 var contentfont1 = "Community HUB"
 var contentfont2 = "by Chaiwat Fakjeen (GORUFU)"
+
 
 //Set & Call EJS
 app.set('view engine','ejs')
@@ -48,7 +67,7 @@ app.get("/",(req,res) =>{
 app.get("/index2",(req,res)=>{
     res.render('index2',{contentfont1 : contentfont1,
         contentfont2 : contentfont2, 
-        obj_feature : feature})
+        obj_feature : feature,icon : icon})
 })
 
 

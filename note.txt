@@ -1,0 +1,32 @@
+var con = [
+    {
+        icon : "img/Logo/email.svg",
+        bottom : "chaiwat.fakj@bu.ac.th -V-"
+    },
+    {
+        img : "img/Logo/twitter.svg",
+        bottom : "GoRuFu :D"
+    },
+    {
+        img : "img/Logo/youtube.svg",
+        bottom : "GoRuFu :D"
+    },
+    {
+        img : "img/Logo/facebook.svg",
+        bottom : "Chaiwat Fakjeen :X"
+    }
+
+];
+
+<div class="icons">
+<img src="img/Logo/twitter.svg" alt="Twitter">
+<p class="icon_info">GoRuFu</p>
+</div>
+<div class="icons">
+<img src="img/Logo/youtube.svg" alt="Youtube">
+<p class="icon_info">GoRuFu</p>
+</div>
+<div class="icons">
+<img src="img/Logo/facebook.svg" alt="facebook">
+<p class="icon_info">Chaiwat Fakjeen</p>
+</div>

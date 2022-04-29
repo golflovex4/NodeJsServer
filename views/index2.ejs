@@ -30,11 +30,14 @@
                 <h1 class="content_font1"><%= contentfont1 %></h1>
                 <h4 class="content_font2"><%= contentfont2 %></h4>
 
-            <div class="flex">
+            <div class="flex2">
+                <% icon.forEach(function(icon){ %>
                 <div class="icons">
-                    <img src="img/Logo/email.svg" alt="email">
-                    <p class="icon_info">chaiwat.fakj@bu.ac.th</p>
+                    <img src="<%= icon.icons %>" alt="pic">
+                    <p class="icon_info"><%= icon.under %></p>
                 </div>
+                <% }) %> 
+                <!--
                 <div class="icons">
                     <img src="img/Logo/twitter.svg" alt="Twitter">
                     <p class="icon_info">GoRuFu</p>
@@ -46,7 +49,7 @@
                 <div class="icons">
                     <img src="img/Logo/facebook.svg" alt="facebook">
                     <p class="icon_info">Chaiwat Fakjeen</p>
-                </div>
+                </div> -->
             </div>
             </Section>
             <!--Feauture Bar--> 
