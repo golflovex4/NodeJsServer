@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tag สำหรับให้คนค้นหา -->
+    <meta name="description" content="Web"> 
+    <!--Font-->
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <title>Comunity by GoRuFu</title>
+    <link rel="stylesheet" href="index.Css">
+</head>
+
+<body>
+        <main>
+            <!-- Navigation Bar-->
+            <header>
+                <nav>
+                    <img class="Logo" src="img/Logo/GoRuFu.svg" alt="logo">
+                    <div class="link">
+                        <a href="#">About</a>
+                        <a href="#">Docs</a>
+                        <button class="button_med" href="#" >Login</button>
+                    </div>
+                </nav>
+            </header>
+            <!--Contents-->
+            <Section class="info">
+                <h1 class="content_font1"><%= contentfont1 %></h1>
+                <h4 class="content_font2"><%= contentfont2 %></h4>
+
+            <div class="flex">
+                <div class="icons">
+                    <img src="img/Logo/email.svg" alt="email">
+                    <p class="icon_info">chaiwat.fakj@bu.ac.th</p>
+                </div>
+                <div class="icons">
+                    <img src="img/Logo/twitter.svg" alt="Twitter">
+                    <p class="icon_info">GoRuFu</p>
+                </div>
+                <div class="icons">
+                    <img src="img/Logo/youtube.svg" alt="Youtube">
+                    <p class="icon_info">GoRuFu</p>
+                </div>
+                <div class="icons">
+                    <img src="img/Logo/facebook.svg" alt="facebook">
+                    <p class="icon_info">Chaiwat Fakjeen</p>
+                </div>
+            </div>
+            </Section>
+            <!--Feauture Bar--> 
+            <section class="Feature">
+                <div class="flex">
+                <!--Add para meter for each loop-->
+                <% obj_feature.forEach(function(feature){ %>
+                <div class="feature_info">
+                    <img  src="<%= feature.img %> " alt="pic">
+                    <p class="feature_top"> <%= feature.top %></p>
+                    <p class="feature_bottom"> <%= feature.bottom %> </p>  
+                </div>
+                <% }) %>
+                <!--
+                <div class="feature_info">
+                    <img  src="img/Logo/pexels-alex-knight-2599244 1(1).png" alt="pic">
+                    <p class="feature_top">AIoT & Robotic</p> 
+                    <p class="feature_bottom">about AIoT & Robotic</p> 
+                </div>
+                -->
+                <div class="feature_info">
+                    <p class="feature_more">Learn More</p> 
+                </div>
+                </div>
+            </section>
+        </main>    
+</body>
+
+</html>

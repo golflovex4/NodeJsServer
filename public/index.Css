@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+:root
+{
+    --accent : #e9d700;/*สี่ปุ่ม*/
+    --accentHover: #dab600;
+    --dark60: rgba(238, 238 , 239, 0.9);
+    --light : #ffffff;
+    --transition : all 0.3s ease 0s; /*delay time*/
+}
+
+/* All Section */
+*{
+    /*Clear margin and padding*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%; /*fix ความสูง*/
+    overflow: auto;
+}
+body{
+    /*gradient Shade of color*/
+    background:url(img/160_2.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+a, button, p
+{
+    font-family: Audiowide;
+    color: var(--light);
+}
+a, button, .logo{
+    cursor: pointer; /*link element*/
+}   
+
+main
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px,190px))minmax(60px,1fr);
+}
+
+header
+{
+    grid-column: 1 / span 7; /*header Star 2 other to last colum*/
+    margin-left: 50px;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+}
+/*class*/
+.link
+{
+    margin-left: auto;
+
+}
+.link a,.link button
+{
+    font-size: 0.75cm;
+    font-weight: 400;
+    transition: var(--transition);
+}
+.link a
+{
+    margin-right: 20px;
+}
+.link a:hover
+{
+    color: var(--accentHover);  /*cursor hover*/
+}
+.button_med
+{
+
+    background-color: var(--accent);
+    padding: 8px 25px;
+    transition: var(--transition);
+}
+
+.button_med:hover
+{
+    color: var(--accentHover);
+}
+.info
+{
+    grid-column: 2/span 6;
+    margin-top: 25%;
+    text-align: center;
+    
+}
+.content_font1
+{
+    font-family: Audiowide;
+    color: rgb(255, 255, 255);
+    font-size: 2.5cm;
+}
+.content_font2
+{
+    font-family: Audiowide;
+    color: rgb(255, 255, 255);
+    font-size: 1cm;
+}
+.icons
+{
+    margin-top: 10%;
+    background-color: #ffffff9c;
+}
+.flex
+{
+    display: inline-flex;
+}
+.icon_info
+{
+    font-family: Audiowide;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+}
+.icons img
+{
+    width: 100px;
+    height: 100px;
+    
+}
+.Feature
+{
+    background-color: #ffffff9c;
+    grid-column: 2 / span 7;
+    margin-top: 5%;
+    display: flex;
+    padding: 30px 0px 0px 30px;
+    align-items:left;
+}
+.feature_info
+{
+    display: flex;
+    /*top right botom left*/
+    margin: 0px 10px 30px 10px;
+}
+.Feature img
+{
+    width: 190px;
+    height: 150px;
+    margin-right: 20px;
+}
+.feature_info p
+{
+    color: black;
+    display: flex;
+}
+.feature_top,.feature_more
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.feature:nth-child(3)
+{
+    margin-left:30px;
+}
+.feature_more
+{
+    cursor: pointer;
+    transition: var(--transition);
+}
+/* Responsive*/
+@media only screen and (max-width:1100px)
+{
+    .icon img{
+        height: 300px;
+        width: auto;
+    }
+    .content_font1, .content_font2
+    {
+        font-size: 2.75rem;
+    }
+    .Feature
+    {
+        grid-column: 1 / span 7;
+    }
+}
+@media only screen and (max-width:850px){
+    
+    .info{
+        grid-column: 2 / span 7;
+    }
+    .icon{
+        flex-direction: column;
+    }
+    .content_font1 , .content_font2{
+
+        font-size: 1.75rem;
+    }
+    .Feature{
+        
+        flex-direction: column;
+    }  
+} 
